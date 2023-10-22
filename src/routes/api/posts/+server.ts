@@ -22,8 +22,6 @@ async function getPosts() {
         new Date(second.date).getTime() - new Date(first.date).getTime()
     )
 
-    // console.log(paths);
-
     return posts;
 }
 

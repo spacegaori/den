@@ -1,9 +1,11 @@
 @import '@fontsource/manrope';
+@import '@fontsource/gowun-batang';
 @import '@fontsource/jetbrains-mono';
 
 html {
 	/* font */
-	--font-sans: 'Manrope', sans-serif;
+	/* --font-sans: 'Manrope', sans-serif; */
+	--font-sans: 'Gowun Batang', sans-serif;
 	--font-mono: 'JetBrains Mono', monospace;
 
 	/* dark */

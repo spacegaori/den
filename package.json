@@ -30,6 +30,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/gowun-batang": "^5.0.7",
 		"@fontsource/jetbrains-mono": "^5.0.16",
 		"@fontsource/manrope": "^5.0.16",
 		"lucide-svelte": "^0.288.0",

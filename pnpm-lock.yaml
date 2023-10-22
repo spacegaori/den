@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/gowun-batang':
+    specifier: ^5.0.7
+    version: 5.0.7
   '@fontsource/jetbrains-mono':
     specifier: ^5.0.16
     version: 5.0.16
@@ -330,6 +333,10 @@ packages:
     resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
     engines: {node: '>=14'}
     dev: true
+
+  /@fontsource/gowun-batang@5.0.7:
+    resolution: {integrity: sha512-BLAeKQWe5rrgVcddcwDaO4H8z1J4EAMqQ7SxILp9VSZ0V2ex1P2uLUrJcAPZ/d+akYVyMybtyqFK/WeoV+KGeQ==}
+    dev: false
 
   /@fontsource/jetbrains-mono@5.0.16:
     resolution: {integrity: sha512-JO3KQiBST/kqHB/VknW1PjOxKdLTaRrEOjkr2NZB9YSWMtFU0kAvEhv01JoOuKAJ38BR9fGm/FTGbIDoK6Np7g==}

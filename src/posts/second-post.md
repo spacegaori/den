@@ -1,11 +1,11 @@
 ---
 title: Second post
 description: Second post
-date: '2023-10-22'
+date: '2023-11-28'
 categories:
     - sveltekit
     - svelte
-published: true
+published: false
 ---
 
 <script>
@@ -17,9 +17,8 @@ published: true
 ## Svelte
 
 Media inside the **static** folder is served from '/'.
+<Counter />
 
 ![Svelte](favicon.png)
 
 ## Counter
-
-<Counter />

@@ -1,7 +1,7 @@
 ---
 title: Valid Anagram
 description: My attempt at a Leetcode problem, "Valid Anagram".
-date: '2023-10-22'
+date: '2023-10-27'
 categories:
     - Leetcode
 published: true
@@ -11,18 +11,18 @@ published: true
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        if (s.length() != t.length()) return false;
+        auto n{ s.length() };
 
-        int n{ static_cast<int>(s.length()) };
-        unordered_map<char, int> counts;
+        if (n != t.length()) return false;
 
-        for (int i{ 0 }; i < n; ++i) {
-            counts[s[i]]++;
-            counts[t[i]]--;
+        array<int, 26> arr{ 0 };
+        for (auto i{ 0 }; i < n; ++i) {
+            arr[s[i] - 'a']++;
+            arr[t[i] - 'a']--;
         }
 
-        for (auto count : counts)
-            if(count.second) return false;
+        if (auto it = find_if_not(begin(arr), end(arr), [](int i) { return i == 0; }); it != end(arr))
+            return false;
 
         return true;
     }
